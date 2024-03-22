@@ -1,2 +1,4 @@
-# web-340
-My classwork for web-340 at Bellevue University
+# WEB 340 JS
+## Contributors
+* Kylie Struhs
+* Richard Krasso
