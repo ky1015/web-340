@@ -5,7 +5,7 @@
  * Description:
  */
 
-/*
+/* Assignment instructions
 For the class module, write three (3) different unit tests in superhero-spec.js using
 the Node.js assert library. Each test should register an event listener for the emitted
 event, call the class method, and print either a pass or fail message to the console.
@@ -36,45 +36,45 @@ const SuperheroEmitter = require("../src/superhero");
 
 const superhero = new SuperheroEmitter();
 
-
-
 // TODO: Write tests for the SuperheroEmitter using TDD principles
 
-function testPerformAction () {
+function testPerformAction() {
   try {
-    superhero.on("action", (action) => {
-    });
+    superhero.on("action", (action) => {});
     superhero.emit("action", "fly");
-    console.log("Passed test performAction.")
+    console.log("Passed test performAction.");
     return true;
-} catch(err) {
-    console.error(`Your superhero did not take action. Failed testPerformAction: ${err}`);
+  } catch (err) {
+    console.error(
+      `Your superhero did not take action. Failed testPerformAction: ${err}`
+    );
     return false;
   }
 }
 
 function testEncounterDanger() {
   try {
-    superhero.on("danger", (danger) => {
-    });
+    superhero.on("danger", (danger) => {});
     superhero.emit("danger", "fire");
     console.log("Passed testEncounterDanger");
     return true;
-    }
-   catch(err) {
-    console.error(`Your superhero did not see the danger in time. Failed testEncounterDanger: ${err}`);
+  } catch (err) {
+    console.error(
+      `Your superhero did not see the danger in time. Failed testEncounterDanger: ${err}`
+    );
     return false;
   }
 }
 
-function testHelpSomeone () {
+function testHelpSomeone() {
   try {
-    superhero.on("help", (person) => {
-    });
+    superhero.on("help", (person) => {});
     superhero.emit("help", "Mary Jane");
     console.log("Passed testHelpSomeone");
-  } catch(err) {
-    console.error(`Your superhero did not save the civilians. Failed testHelpSomeone: ${err}`);
+  } catch (err) {
+    console.error(
+      `Your superhero did not save the civilians. Failed testHelpSomeone: ${err}`
+    );
     return false;
   }
 }

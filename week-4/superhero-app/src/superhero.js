@@ -16,7 +16,6 @@ c. helpSomeone(
 
 //let EventEmitter = require('events');
 
-
 // TODO: Create a SuperheroEmitter class that extends EventEmitter and implements the following methods: performAction, encounterDanger, and helpSomeone
 /*class SuperheroEmitter extends EventEmitter {
   constructor() {
@@ -40,18 +39,18 @@ c. helpSomeone(
 // coffee shop modded
 const EventEmitter = require("events");
 class superheroEmitter extends EventEmitter {
-constructor() {
-super();
-}
-performAction(action) {
-this.emit("action", action);
-}
-encounterDanger(danger) {
-this.emit("danger", danger);
-}
-helpSomeone(person) {
-this.emit("help", person)
-}
+  constructor() {
+    super();
+  }
+  performAction(action) {
+    this.emit("action", action);
+  }
+  encounterDanger(danger) {
+    this.emit("danger", danger);
+  }
+  helpSomeone(person) {
+    this.emit("help", person);
+  }
 }
 
-module.exports = superheroEmitter
+module.exports = superheroEmitter;
